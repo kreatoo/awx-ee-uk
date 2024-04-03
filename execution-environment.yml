@@ -25,6 +25,7 @@ dependencies:
       - name: ansible.posix
       - name: ansible.windows
       - name: redhatinsights.insights
+      - name: lucasheld.uptime_kuma
   system: |
     git-core [platform:rpm]
     python3.9-devel [platform:rpm compile]
@@ -59,6 +60,7 @@ dependencies:
     pyyaml
     six
     receptorctl
+    uptime-kuma-api
 additional_build_steps:
   append_base:
     - RUN $PYCMD -m pip install -U pip
