@@ -27,7 +27,7 @@ jobs:
 
       - name: GitHub Packages login
         run: |
-          echo "${{ secrets.CR_PAT }}" | docker login quay.io -u kreatoo --password-stdin
+          echo "${{ secrets.CR_PAT }}" | docker login ghcr.io -u kreatoo --password-stdin
 
       - name: Build and push image
         run: |
