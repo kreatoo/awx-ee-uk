@@ -25,9 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Quay login
+      - name: GitHub Packages login
         run: |
-          echo "${{ secrets.QUAY_TOKEN }}" | docker login quay.io -u ${{ secrets.QUAY_USERNAME }} --password-stdin
+          echo "${{ secrets.CR_PAT }}" | docker login quay.io -u kreatoo --password-stdin
 
       - name: Build and push image
         run: |
