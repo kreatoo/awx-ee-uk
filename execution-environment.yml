@@ -60,6 +60,7 @@ dependencies:
     python-daemon
     pyyaml
     six
+    requests
     receptorctl
     uptime-kuma-api
 additional_build_steps:
