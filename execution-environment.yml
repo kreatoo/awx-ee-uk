@@ -26,6 +26,7 @@ dependencies:
       - name: ansible.windows
       - name: redhatinsights.insights
       - name: lucasheld.uptime_kuma
+      - name: maxhoesel.caddy
   system: |
     git-core [platform:rpm]
     python3.9-devel [platform:rpm compile]
