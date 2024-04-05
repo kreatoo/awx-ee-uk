@@ -27,6 +27,7 @@ dependencies:
       - name: redhatinsights.insights
       - name: lucasheld.uptime_kuma
       - name: maxhoesel.caddy
+      - name: nginxinc.nginx_config
   system: |
     git-core [platform:rpm]
     python3.9-devel [platform:rpm compile]
